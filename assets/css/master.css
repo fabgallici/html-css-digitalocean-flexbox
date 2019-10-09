@@ -306,18 +306,6 @@ header .form-container div[class*="col-"] {
   max-width: 100%;
   height: auto;
 }
-/* old version */
-/* .innovative-img-container img {
-  width: 90%;
-  vertical-align: middle;
-}
-
-.innovative-img-container li {
-  display: inline-block;
-  width: calc((100%/6) - 4px);
-} */
-
-
 
 /* ------------------------------- */
 /*      DEPLOY AND SCALE        */
