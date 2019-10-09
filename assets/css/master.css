@@ -108,25 +108,31 @@ header {
 .top-menu-wrapper {
   background-color: #fff;
 }
-.top-menu-cont {
-  margin: 0 auto;
-  width: 95%;
+/* flex update */
+#new-oc-menu {
+  display: flex;
+  justify-content: space-between;
 }
-/* header Floats */
-.new-btn,
-.now-available,
-#new-oc-menu nav li,
-.digital-logo,
-#digital-oc-menu nav,
-#digital-oc-menu nav li {
-  float: left;
+#new-oc-menu nav ul {
+  display: flex;
+  justify-content: space-around;
 }
-#new-oc-menu nav,
-#digital-oc-menu .signup-btn,
-#menu-hamburger {
-  float: right;
+
+#digital-oc-menu {
+  display: flex;
+  justify-content: space-between;
 }
-/*-> fine header floats */
+#digital-oc-menu nav {
+  display: flex;
+}
+#digital-oc-menu .nav-left-menu {
+  display: flex;
+  justify-content: space-around;
+}
+.sign-up-right-menu {
+  position: relative;
+}
+/* End flex update */
 /*-- TOP MENU NEW OCEAN --*/
 #new-oc-menu {
   border-bottom: 1px solid #E5E8ED;
@@ -475,7 +481,7 @@ footer h5 {
     display: block;
   }
   #logo-img-blue,
-  #digital-oc-menu nav,
+  #digital-oc-menu .nav-left-menu,
   #digital-oc-menu .signup-btn,
   #new-oc-menu {
     display: none;
