@@ -362,7 +362,13 @@ header .form-container div[class*="col-"] {
 /* ------------------------------- */
 /*     BUILT FOR BUSINESS     */
 /* ------------------------------- */
-#built-for-bus > .container > .row [class*="col-"] {
+.bus-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bus-flex-item {
+  flex-basis: calc((100%/12) * 3);
   padding: 10px 25px;
 }
 #built-for-bus h2 {
@@ -512,16 +518,20 @@ footer h5 {
     flex-basis: 40%;
   }
 
-  /* old version */
-  /* .innovative-img-container {
-    width: 90%;
+}
+/* build for business xs */
+@media screen and (min-width: 420px) and (max-width:779px) {
+  .bus-flex-item {
+    flex-basis: calc((100%/12)*6);
   }
-  .innovative-img-container li {
-    width: calc((100%/12)*6 - 4px);
-  }
-  .innovative-img-container img {
-    width: 80%;
+}
+/* build for business xxs */
+@media screen and (max-width: 419px) {
+  /* flex-item prende comunque tutto spazio */
+  /* .bus-flex-item {
+    flex-basis: 100%;
   } */
-
-
+  .bus-flex-container {
+    flex-direction: column;
+  }
 }
