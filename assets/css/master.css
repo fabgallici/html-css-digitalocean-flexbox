@@ -515,10 +515,6 @@ footer h5 {
 }
 /* build for business xxs */
 @media screen and (max-width: 419px) {
-  /* flex-item prende comunque tutto spazio */
-  /* .bus-flex-item {
-    flex-basis: 100%;
-  } */
   .bus-flex-container {
     flex-direction: column;
   }
