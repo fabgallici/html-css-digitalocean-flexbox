@@ -107,6 +107,8 @@ header {
 }
 .top-menu-wrapper {
   background-color: #fff;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 /* flex update */
 #new-oc-menu {
